@@ -51,11 +51,8 @@ public class Fan {
     public String getColor() {
         return color;
     }
-
+// (boolean()? true "": false "")
     public String toString() {
-        return "speed: " + getSpeed()
-                + ", Color: " + getColor()
-                + ", Radius: " + getRadius()
-                + ( isOn() ? ", fan is on" : ", fan is off");
+        return (isOn()? "Color: "+getColor()+", Radius: "+ getRadius()+", Speed: "+getSpeed()+", fan is on":"Color: "+getColor()+", Radius: "+getRadius()+", fan is off")                  ;
     }
 }
